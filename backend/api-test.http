@@ -1,0 +1,105 @@
+### Environment
+@baseUrl = http://localhost:8000
+@json = application/json
+
+### Birimler - Listele
+GET {{baseUrl}}/api/birimler
+Accept: application/json
+
+### Birimler - Oluştur
+# @name birim_create
+POST {{baseUrl}}/api/birimler
+Content-Type: {{json}}
+Accept: application/json
+
+{
+  "birim_adi": "Bilgi İşlem",
+  "konumu": "A Blok"
+}
+
+### Birimler - Göster
+@birimId = 1
+GET {{baseUrl}}/api/birimler/{{birimId}}
+Accept: application/json
+
+### Birimler - Güncelle (PATCH)
+PATCH {{baseUrl}}/api/birimler/{{birimId}}
+Content-Type: {{json}}
+Accept: application/json
+
+{
+  "konumu": "B Blok"
+}
+
+### Birimler - Sil
+DELETE {{baseUrl}}/api/birimler/{{birimId}}
+Accept: application/json
+
+
+### Unvanlar - Listele
+GET {{baseUrl}}/api/unvanlar
+Accept: application/json
+
+### Unvanlar - Oluştur
+# @name unvan_create
+POST {{baseUrl}}/api/unvanlar
+Content-Type: {{json}}
+Accept: application/json
+
+{
+  "unvan_adi": "Uzman"
+}
+
+### Unvanlar - Göster
+@unvanId = 1
+GET {{baseUrl}}/api/unvanlar/{{unvanId}}
+Accept: application/json
+
+### Unvanlar - Güncelle (PATCH)
+PATCH {{baseUrl}}/api/unvanlar/4
+Content-Type: {{json}}
+Accept: application/json
+
+{
+  "unvan_adi": "Kidemli Uzman"
+}
+
+### Unvanlar - Sil
+DELETE {{baseUrl}}/api/unvanlar/{{unvanId}}
+Accept: application/json
+
+
+### Personel - Listele
+GET {{baseUrl}}/api/personel
+Accept: application/json
+
+### Personel - Oluştur
+# @name personel_create
+POST {{baseUrl}}/api/personel
+Content-Type: {{json}}
+Accept: application/json
+
+{
+  "adi_soyadi": "Eren Gundogdu",
+  "unvan_id": 3,
+  "birim_id": 2,
+  "notlar": "Not örneği"
+}
+
+### Personel - Göster
+@personelId = 1
+GET {{baseUrl}}/api/personel/{{personelId}}
+Accept: application/json
+
+### Personel - Güncelle (PATCH)
+PATCH {{baseUrl}}/api/personel/{{personelId}}
+Content-Type: {{json}}
+Accept: application/json
+
+{
+  "notlar": "Guncellendi"
+}
+
+### Personel - Sil
+DELETE {{baseUrl}}/api/personel/{{personelId}}
+Accept: application/json

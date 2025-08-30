@@ -1,0 +1,40 @@
+// app global css in SCSS form
+
+// Light military-styled page background
+body {
+  background-color: #eef2ea; // soft olive tint
+  /* subtle camouflage-like pattern overlay */
+  background-image:
+    radial-gradient( circle at 10% 20%, rgba(46,78,63,0.08) 0%, rgba(46,78,63,0.08) 20%, transparent 21% ),
+    radial-gradient( circle at 70% 10%, rgba(139,111,71,0.08) 0%, rgba(139,111,71,0.08) 18%, transparent 19% ),
+    radial-gradient( circle at 30% 80%, rgba(181,182,130,0.08) 0%, rgba(181,182,130,0.08) 16%, transparent 17% ),
+    radial-gradient( circle at 90% 70%, rgba(46,78,63,0.06) 0%, rgba(46,78,63,0.06) 14%, transparent 15% );
+  background-size: 500px 500px;
+}
+
+// Make q-page backgrounds transparent to show body bg
+.q-page {
+  background: transparent;
+}
+
+// Subtle elevation for filled inputs
+.q-field--filled .q-field__control {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+// Primary chips slightly bolder
+.q-chip.bg-primary {
+  font-weight: 600;
+}
+
+/* Optional: watermark overlay (provide an image URL via background-image) */
+.bg-watermark {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center 20vh;
+  background-size: 40vw auto;
+  opacity: 0.06;
+  z-index: 0;
+}

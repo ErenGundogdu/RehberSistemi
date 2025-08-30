@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple rifle-like silhouette (stylized) -->
+  <g fill="#2e4e3f" fill-opacity="0.12">
+    <!-- Stock -->
+    <path d="M40 120 L120 120 L150 150 L100 150 L80 140 L40 140 Z" />
+    <!-- Receiver -->
+    <rect x="120" y="110" width="200" height="30" rx="4" />
+    <!-- Magazine -->
+    <path d="M270 140 L300 140 L290 170 L260 170 Z" />
+    <!-- Grip -->
+    <path d="M210 140 L240 140 L235 165 L200 165 Z" />
+    <!-- Barrel -->
+    <rect x="320" y="118" width="360" height="14" rx="3" />
+    <!-- Muzzle device -->
+    <rect x="680" y="115" width="35" height="20" rx="2" />
+    <!-- Top rail -->
+    <rect x="180" y="98" width="180" height="8" rx="2" />
+    <!-- Sight -->
+    <rect x="210" y="88" width="24" height="10" rx="2" />
+  </g>
+</svg>
